@@ -1,0 +1,98 @@
+:root{
+    --icons-color: rgb(98,98,184);
+    --icons-bg-color: #e2e6e9;
+    --shadow-dark-color: #d3dae7;
+    --shadow-light-color:#fff;
+    --main-bg-color:white;
+
+
+    --box-shadow: 1rem 1rem 1rem var(--shadow-dark-color),
+                  -1rem -1rem 1rem var(--shadow-light-color);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--main-bg-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.ToDoApp{
+    width:300px;
+    height:500px;
+    background: rgb(226, 175, 226);
+    box-shadow: none;
+    padding: 2rem;
+    border-radius: 2rem;
+    overflow: hidden;
+
+}
+.ToDoApp .ToDoApp-info{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 2rem;
+    
+
+
+}
+.ToDoApp-info i{
+    font-size: 25px;
+    background-color: var(--icons-color);
+    padding: 1rem;
+    border-radius: 10%;
+    color: var(--main-bg-color);
+    margin-right: 1rem;
+}
+h1{
+    color: rgb(98, 98, 184);
+    font-family: sans-serif;
+}
+.todocontainer{
+    width: 100%;
+    height: 80%;
+    
+}
+.todocontainer .inputfield{
+    background: rgb(172, 136, 172);
+    box-shadow: var(--main-bg-color);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+input{
+    width: 80%;
+    height: 40px;
+    outline: none;
+    border: none;
+    align-items: center;
+    background: var(--main-bg-color);
+}
+.inputfield[type='text']{
+         margin-left: 1rem;
+
+}
+.inputfield i{
+    font-size: 20px;
+    margin-right: 1rem;
+    color: #e2e6e9;
+    
+}
+.create-div{
+    width: 100%;
+    height: 40px;
+    background:rgb(187, 187, 224);
+    margin-top: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+}
